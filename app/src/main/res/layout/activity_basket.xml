@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasketActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="250dp"
+            android:text="Doriti sa lasati specificatii comenzii?"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/specification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Scrieti specificatiile"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunt de acord cu termenii si conditiile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/bottom_specification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trimiteti comanda"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/observatii_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observatiile restaurantului!"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red"/>
+    </LinearLayout>
+</RelativeLayout>
